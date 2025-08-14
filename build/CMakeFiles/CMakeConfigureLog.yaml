@@ -1,0 +1,268 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The target system is: Generic - 1 - armv7-a
+      The host system is: Linux - 6.6.87.2-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/houne/vitasdk/bin/arm-vita-eabi-gcc 
+      Build flags: -Wl,-q
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/houne/3d_test/build/CMakeFiles/3.31.6/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/houne/3d_test/build/CMakeFiles/CMakeScratch/TryCompile-bbuY27"
+      binary: "/home/houne/3d_test/build/CMakeFiles/CMakeScratch/TryCompile-bbuY27"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wl,-q"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g -DDEBUG -D_DEBUG"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,-z,nocopyreloc"
+      SHOWED_DEPRECATION_WARNING: "On"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/houne/3d_test/build/CMakeFiles/CMakeScratch/TryCompile-bbuY27'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fa97b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fa97b.dir/build.make CMakeFiles/cmTC_fa97b.dir/build
+        gmake[1]: Entering directory '/home/houne/3d_test/build/CMakeFiles/CMakeScratch/TryCompile-bbuY27'
+        Building C object CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj
+        /home/houne/vitasdk/bin/arm-vita-eabi-gcc   -Wl,-q    -v -o CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/home/houne/vitasdk/bin/arm-vita-eabi-gcc
+        Target: arm-vita-eabi
+        Configured with: /home/runner/work/autobuilds/autobuilds/buildscripts/build/gcc-final-prefix/src/gcc-final/configure --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=arm-vita-eabi --prefix=/home/runner/work/autobuilds/autobuilds/buildscripts/build/vitasdk --libdir=/home/runner/work/autobuilds/autobuilds/buildscripts/build/vitasdk/lib --libexecdir=/home/runner/work/autobuilds/autobuilds/buildscripts/build/vitasdk/lib --with-sysroot=/home/runner/work/autobuilds/autobuilds/buildscripts/build/vitasdk/arm-vita-eabi --with-gmp=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-mpfr=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-mpc=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-isl=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-libelf=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-python-dir=share/gcc-arm-vita-eabi --enable-languages=c,c++ --disable-decimal-float --disable-libffi --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --disable-multilib --with-arch=armv7-a --with-tune=cortex-a9 --with-fpu=neon --with-float=hard --with-mode=thumb --with-pkgversion='GNU Tools for ARM Embedded Processors' --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-headers=yes --enable-threads=posix --enable-libgomp CFLAGS= CXXFLAGS=
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 10.3.0 (GNU Tools for ARM Embedded Processors) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj' '-c'  '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=neon' '-mthumb' '-march=armv7-a+simd'
+         /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/cc1 -quiet -v -iprefix /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/ -isysroot /home/houne/vitasdk/bin/../arm-vita-eabi -D__USES_INITFINI__ /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=cortex-a9 -mfloat-abi=hard -mfpu=neon -mthumb -march=armv7-a+simd -auxbase-strip CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj -version -o /tmp/ccMD6fUY.s
+        GNU C17 (GNU Tools for ARM Embedded Processors) version 10.3.0 (arm-vita-eabi)
+        	compiled by GNU C version 11.4.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.21-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/home/houne/vitasdk/bin/../lib/gcc/../../lib/gcc/arm-vita-eabi/10.3.0/include"
+        ignoring nonexistent directory "/home/houne/vitasdk/bin/../arm-vita-eabi/usr/local/include"
+        ignoring duplicate directory "/home/houne/vitasdk/bin/../lib/gcc/../../lib/gcc/arm-vita-eabi/10.3.0/include-fixed"
+        ignoring duplicate directory "/home/houne/vitasdk/bin/../lib/gcc/../../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/include"
+        ignoring nonexistent directory "/home/houne/vitasdk/bin/../arm-vita-eabi/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/include
+         /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/include-fixed
+         /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/include
+        End of search list.
+        GNU C17 (GNU Tools for ARM Embedded Processors) version 10.3.0 (arm-vita-eabi)
+        	compiled by GNU C version 11.4.0, GMP version 6.1.2, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.21-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 62b8ea0751624fcc107bdb910b66082e
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj' '-c'  '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=neon' '-mthumb' '-march=armv7-a+simd'
+         /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/bin/as -v -march=armv7-a -mfloat-abi=hard -mfpu=neon -meabi=5 -o CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj /tmp/ccMD6fUY.s
+        GNU assembler version 2.34 (arm-vita-eabi) using BFD version (GNU Tools for ARM Embedded Processors) 2.34
+        COMPILER_PATH=/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/:/home/houne/vitasdk/bin/../lib/gcc/:/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/bin/
+        LIBRARY_PATH=/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/:/home/houne/vitasdk/bin/../lib/gcc/:/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib/:/home/houne/vitasdk/bin/../arm-vita-eabi/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj' '-c'  '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=neon' '-mthumb' '-march=armv7-a+simd'
+        Linking C executable cmTC_fa97b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa97b.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/home/houne/vitasdk/bin/arm-vita-eabi-gcc
+        COLLECT_LTO_WRAPPER=/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/lto-wrapper
+        Target: arm-vita-eabi
+        Configured with: /home/runner/work/autobuilds/autobuilds/buildscripts/build/gcc-final-prefix/src/gcc-final/configure --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=arm-vita-eabi --prefix=/home/runner/work/autobuilds/autobuilds/buildscripts/build/vitasdk --libdir=/home/runner/work/autobuilds/autobuilds/buildscripts/build/vitasdk/lib --libexecdir=/home/runner/work/autobuilds/autobuilds/buildscripts/build/vitasdk/lib --with-sysroot=/home/runner/work/autobuilds/autobuilds/buildscripts/build/vitasdk/arm-vita-eabi --with-gmp=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-mpfr=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-mpc=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-isl=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-libelf=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-python-dir=share/gcc-arm-vita-eabi --enable-languages=c,c++ --disable-decimal-float --disable-libffi --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --disable-multilib --with-arch=armv7-a --with-tune=cortex-a9 --with-fpu=neon --with-float=hard --with-mode=thumb --with-pkgversion='GNU Tools for ARM Embedded Processors' --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-headers=yes --enable-threads=posix --enable-libgomp CFLAGS= CXXFLAGS=
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 10.3.0 (GNU Tools for ARM Embedded Processors) 
+        COMPILER_PATH=/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/:/home/houne/vitasdk/bin/../lib/gcc/:/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/bin/
+        LIBRARY_PATH=/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/:/home/houne/vitasdk/bin/../lib/gcc/:/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib/:/home/houne/vitasdk/bin/../arm-vita-eabi/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fa97b'  '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=neon' '-mthumb' '-march=armv7-a+simd'
+         /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/collect2 -plugin /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/liblto_plugin.so -plugin-opt=/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccprt0ac.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lSceRtc_stub -plugin-opt=-pass-through=-lSceSysmem_stub -plugin-opt=-pass-through=-lSceKernelThreadMgr_stub -plugin-opt=-pass-through=-lSceKernelModulemgr_stub -plugin-opt=-pass-through=-lSceIofilemgr_stub -plugin-opt=-pass-through=-lSceProcessmgr_stub -plugin-opt=-pass-through=-lSceLibKernel_stub -plugin-opt=-pass-through=-lSceNet_stub -plugin-opt=-pass-through=-lSceNetCtl_stub -plugin-opt=-pass-through=-lSceSysmodule_stub --sysroot=/home/houne/vitasdk/bin/../arm-vita-eabi -X -o cmTC_fa97b /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crti.o /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crtbegin.o /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib/crt0.o -L/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0 -L/home/houne/vitasdk/bin/../lib/gcc -L/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib -L/home/houne/vitasdk/bin/../arm-vita-eabi/lib -q -z nocopyreloc CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lc -lSceRtc_stub -lSceSysmem_stub -lSceKernelThreadMgr_stub -lSceKernelModulemgr_stub -lSceIofilemgr_stub -lSceProcessmgr_stub -lSceLibKernel_stub -lSceNet_stub -lSceNetCtl_stub -lSceSysmodule_stub --end-group /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crtend.o /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fa97b'  '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=neon' '-mthumb' '-march=armv7-a+simd'
+        /home/houne/vitasdk/bin/arm-vita-eabi-gcc  -Wl,-q  -Wl,-z,nocopyreloc -v CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj -o cmTC_fa97b
+        gmake[1]: Leaving directory '/home/houne/3d_test/build/CMakeFiles/CMakeScratch/TryCompile-bbuY27'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/include]
+          add: [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/include-fixed]
+          add: [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/include]
+        end of search list found
+        collapse include dir [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/include] ==> [/home/houne/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/include]
+        collapse include dir [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/include-fixed] ==> [/home/houne/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/include-fixed]
+        collapse include dir [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/include] ==> [/home/houne/vitasdk/arm-vita-eabi/include]
+        implicit include dirs: [/home/houne/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/include;/home/houne/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/include-fixed;/home/houne/vitasdk/arm-vita-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/houne/3d_test/build/CMakeFiles/CMakeScratch/TryCompile-bbuY27']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fa97b/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_fa97b.dir/build.make CMakeFiles/cmTC_fa97b.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/houne/3d_test/build/CMakeFiles/CMakeScratch/TryCompile-bbuY27']
+        ignore line: [Building C object CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/home/houne/vitasdk/bin/arm-vita-eabi-gcc   -Wl -q    -v -o CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/houne/vitasdk/bin/arm-vita-eabi-gcc]
+        ignore line: [Target: arm-vita-eabi]
+        ignore line: [Configured with: /home/runner/work/autobuilds/autobuilds/buildscripts/build/gcc-final-prefix/src/gcc-final/configure --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=arm-vita-eabi --prefix=/home/runner/work/autobuilds/autobuilds/buildscripts/build/vitasdk --libdir=/home/runner/work/autobuilds/autobuilds/buildscripts/build/vitasdk/lib --libexecdir=/home/runner/work/autobuilds/autobuilds/buildscripts/build/vitasdk/lib --with-sysroot=/home/runner/work/autobuilds/autobuilds/buildscripts/build/vitasdk/arm-vita-eabi --with-gmp=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-mpfr=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-mpc=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-isl=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-libelf=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-python-dir=share/gcc-arm-vita-eabi --enable-languages=c,c++ --disable-decimal-float --disable-libffi --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --disable-multilib --with-arch=armv7-a --with-tune=cortex-a9 --with-fpu=neon --with-float=hard --with-mode=thumb --with-pkgversion='GNU Tools for ARM Embedded Processors' --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-headers=yes --enable-threads=posix --enable-libgomp CFLAGS= CXXFLAGS=]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 10.3.0 (GNU Tools for ARM Embedded Processors) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj' '-c'  '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=neon' '-mthumb' '-march=armv7-a+simd']
+        ignore line: [ /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/cc1 -quiet -v -iprefix /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/ -isysroot /home/houne/vitasdk/bin/../arm-vita-eabi -D__USES_INITFINI__ /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=cortex-a9 -mfloat-abi=hard -mfpu=neon -mthumb -march=armv7-a+simd -auxbase-strip CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj -version -o /tmp/ccMD6fUY.s]
+        ignore line: [GNU C17 (GNU Tools for ARM Embedded Processors) version 10.3.0 (arm-vita-eabi)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.21-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/home/houne/vitasdk/bin/../lib/gcc/../../lib/gcc/arm-vita-eabi/10.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/home/houne/vitasdk/bin/../arm-vita-eabi/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/home/houne/vitasdk/bin/../lib/gcc/../../lib/gcc/arm-vita-eabi/10.3.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "/home/houne/vitasdk/bin/../lib/gcc/../../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/include"]
+        ignore line: [ignoring nonexistent directory "/home/houne/vitasdk/bin/../arm-vita-eabi/usr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/include]
+        ignore line: [ /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/include-fixed]
+        ignore line: [ /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (GNU Tools for ARM Embedded Processors) version 10.3.0 (arm-vita-eabi)]
+        ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.1.2  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.21-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 62b8ea0751624fcc107bdb910b66082e]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj' '-c'  '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=neon' '-mthumb' '-march=armv7-a+simd']
+        ignore line: [ /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/bin/as -v -march=armv7-a -mfloat-abi=hard -mfpu=neon -meabi=5 -o CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj /tmp/ccMD6fUY.s]
+        ignore line: [GNU assembler version 2.34 (arm-vita-eabi) using BFD version (GNU Tools for ARM Embedded Processors) 2.34]
+        ignore line: [COMPILER_PATH=/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/:/home/houne/vitasdk/bin/../lib/gcc/:/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/:/home/houne/vitasdk/bin/../lib/gcc/:/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib/:/home/houne/vitasdk/bin/../arm-vita-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj' '-c'  '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=neon' '-mthumb' '-march=armv7-a+simd']
+        ignore line: [Linking C executable cmTC_fa97b]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa97b.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/houne/vitasdk/bin/arm-vita-eabi-gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/lto-wrapper]
+        ignore line: [Target: arm-vita-eabi]
+        ignore line: [Configured with: /home/runner/work/autobuilds/autobuilds/buildscripts/build/gcc-final-prefix/src/gcc-final/configure --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=arm-vita-eabi --prefix=/home/runner/work/autobuilds/autobuilds/buildscripts/build/vitasdk --libdir=/home/runner/work/autobuilds/autobuilds/buildscripts/build/vitasdk/lib --libexecdir=/home/runner/work/autobuilds/autobuilds/buildscripts/build/vitasdk/lib --with-sysroot=/home/runner/work/autobuilds/autobuilds/buildscripts/build/vitasdk/arm-vita-eabi --with-gmp=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-mpfr=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-mpc=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-isl=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-libelf=/home/runner/work/autobuilds/autobuilds/buildscripts/build/deps_build --with-python-dir=share/gcc-arm-vita-eabi --enable-languages=c,c++ --disable-decimal-float --disable-libffi --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --disable-multilib --with-arch=armv7-a --with-tune=cortex-a9 --with-fpu=neon --with-float=hard --with-mode=thumb --with-pkgversion='GNU Tools for ARM Embedded Processors' --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-headers=yes --enable-threads=posix --enable-libgomp CFLAGS= CXXFLAGS=]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 10.3.0 (GNU Tools for ARM Embedded Processors) ]
+        ignore line: [COMPILER_PATH=/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/:/home/houne/vitasdk/bin/../lib/gcc/:/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/bin/]
+        ignore line: [LIBRARY_PATH=/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/:/home/houne/vitasdk/bin/../lib/gcc/:/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib/:/home/houne/vitasdk/bin/../arm-vita-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fa97b'  '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=neon' '-mthumb' '-march=armv7-a+simd']
+        link line: [ /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/collect2 -plugin /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/liblto_plugin.so -plugin-opt=/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccprt0ac.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lSceRtc_stub -plugin-opt=-pass-through=-lSceSysmem_stub -plugin-opt=-pass-through=-lSceKernelThreadMgr_stub -plugin-opt=-pass-through=-lSceKernelModulemgr_stub -plugin-opt=-pass-through=-lSceIofilemgr_stub -plugin-opt=-pass-through=-lSceProcessmgr_stub -plugin-opt=-pass-through=-lSceLibKernel_stub -plugin-opt=-pass-through=-lSceNet_stub -plugin-opt=-pass-through=-lSceNetCtl_stub -plugin-opt=-pass-through=-lSceSysmodule_stub --sysroot=/home/houne/vitasdk/bin/../arm-vita-eabi -X -o cmTC_fa97b /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crti.o /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crtbegin.o /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib/crt0.o -L/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0 -L/home/houne/vitasdk/bin/../lib/gcc -L/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib -L/home/houne/vitasdk/bin/../arm-vita-eabi/lib -q -z nocopyreloc CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lc -lSceRtc_stub -lSceSysmem_stub -lSceKernelThreadMgr_stub -lSceKernelModulemgr_stub -lSceIofilemgr_stub -lSceProcessmgr_stub -lSceLibKernel_stub -lSceNet_stub -lSceNetCtl_stub -lSceSysmodule_stub --end-group /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crtend.o /home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crtn.o]
+          arg [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccprt0ac.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lSceRtc_stub] ==> ignore
+          arg [-plugin-opt=-pass-through=-lSceSysmem_stub] ==> ignore
+          arg [-plugin-opt=-pass-through=-lSceKernelThreadMgr_stub] ==> ignore
+          arg [-plugin-opt=-pass-through=-lSceKernelModulemgr_stub] ==> ignore
+          arg [-plugin-opt=-pass-through=-lSceIofilemgr_stub] ==> ignore
+          arg [-plugin-opt=-pass-through=-lSceProcessmgr_stub] ==> ignore
+          arg [-plugin-opt=-pass-through=-lSceLibKernel_stub] ==> ignore
+          arg [-plugin-opt=-pass-through=-lSceNet_stub] ==> ignore
+          arg [-plugin-opt=-pass-through=-lSceNetCtl_stub] ==> ignore
+          arg [-plugin-opt=-pass-through=-lSceSysmodule_stub] ==> ignore
+          arg [--sysroot=/home/houne/vitasdk/bin/../arm-vita-eabi] ==> ignore
+          arg [-X] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_fa97b] ==> ignore
+          arg [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crti.o] ==> obj [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crti.o]
+          arg [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crtbegin.o] ==> obj [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crtbegin.o]
+          arg [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib/crt0.o] ==> obj [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib/crt0.o]
+          arg [-L/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0] ==> dir [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0]
+          arg [-L/home/houne/vitasdk/bin/../lib/gcc] ==> dir [/home/houne/vitasdk/bin/../lib/gcc]
+          arg [-L/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib] ==> dir [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib]
+          arg [-L/home/houne/vitasdk/bin/../arm-vita-eabi/lib] ==> dir [/home/houne/vitasdk/bin/../arm-vita-eabi/lib]
+          arg [-q] ==> ignore
+          arg [-znocopyreloc] ==> ignore
+          arg [CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [--start-group] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lSceRtc_stub] ==> lib [SceRtc_stub]
+          arg [-lSceSysmem_stub] ==> lib [SceSysmem_stub]
+          arg [-lSceKernelThreadMgr_stub] ==> lib [SceKernelThreadMgr_stub]
+          arg [-lSceKernelModulemgr_stub] ==> lib [SceKernelModulemgr_stub]
+          arg [-lSceIofilemgr_stub] ==> lib [SceIofilemgr_stub]
+          arg [-lSceProcessmgr_stub] ==> lib [SceProcessmgr_stub]
+          arg [-lSceLibKernel_stub] ==> lib [SceLibKernel_stub]
+          arg [-lSceNet_stub] ==> lib [SceNet_stub]
+          arg [-lSceNetCtl_stub] ==> lib [SceNetCtl_stub]
+          arg [-lSceSysmodule_stub] ==> lib [SceSysmodule_stub]
+          arg [--end-group] ==> ignore
+          arg [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crtend.o] ==> obj [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crtend.o]
+          arg [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crtn.o] ==> obj [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fa97b'  '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=neon' '-mthumb' '-march=armv7-a+simd']
+        ignore line: [/home/houne/vitasdk/bin/arm-vita-eabi-gcc  -Wl -q  -Wl -z nocopyreloc -v CMakeFiles/cmTC_fa97b.dir/CMakeCCompilerABI.c.obj -o cmTC_fa97b]
+        ignore line: [gmake[1]: Leaving directory '/home/houne/3d_test/build/CMakeFiles/CMakeScratch/TryCompile-bbuY27']
+        ignore line: []
+        ignore line: []
+        collapse obj [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crti.o] ==> [/home/houne/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/crti.o]
+        collapse obj [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crtbegin.o] ==> [/home/houne/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/crtbegin.o]
+        collapse obj [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib/crt0.o] ==> [/home/houne/vitasdk/arm-vita-eabi/lib/crt0.o]
+        collapse obj [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crtend.o] ==> [/home/houne/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/crtend.o]
+        collapse obj [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/crtn.o] ==> [/home/houne/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/crtn.o]
+        collapse library dir [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0] ==> [/home/houne/vitasdk/lib/gcc/arm-vita-eabi/10.3.0]
+        collapse library dir [/home/houne/vitasdk/bin/../lib/gcc] ==> [/home/houne/vitasdk/lib/gcc]
+        collapse library dir [/home/houne/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/lib] ==> [/home/houne/vitasdk/arm-vita-eabi/lib]
+        collapse library dir [/home/houne/vitasdk/bin/../arm-vita-eabi/lib] ==> [/home/houne/vitasdk/arm-vita-eabi/lib]
+        implicit libs: [gcc;c;SceRtc_stub;SceSysmem_stub;SceKernelThreadMgr_stub;SceKernelModulemgr_stub;SceIofilemgr_stub;SceProcessmgr_stub;SceLibKernel_stub;SceNet_stub;SceNetCtl_stub;SceSysmodule_stub]
+        implicit objs: [/home/houne/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/crti.o;/home/houne/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/crtbegin.o;/home/houne/vitasdk/arm-vita-eabi/lib/crt0.o;/home/houne/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/crtend.o;/home/houne/vitasdk/lib/gcc/arm-vita-eabi/10.3.0/crtn.o]
+        implicit dirs: [/home/houne/vitasdk/lib/gcc/arm-vita-eabi/10.3.0;/home/houne/vitasdk/lib/gcc;/home/houne/vitasdk/arm-vita-eabi/lib]
+        implicit fwks: []
+      
+      
+...

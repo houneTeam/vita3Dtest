@@ -1,0 +1,6 @@
+/home/houne/3d_test/build/CMakeFiles/datnights_viewer.dir
+/home/houne/3d_test/build/CMakeFiles/datnights_viewer-velf.dir
+/home/houne/3d_test/build/CMakeFiles/datnights_viewer.self-self.dir
+/home/houne/3d_test/build/CMakeFiles/datnights_viewer.vpk-vpk.dir
+/home/houne/3d_test/build/CMakeFiles/edit_cache.dir
+/home/houne/3d_test/build/CMakeFiles/rebuild_cache.dir
